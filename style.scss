@@ -101,3 +101,22 @@ body{
     
 }
 
+header{
+    width: 100%;
+    height: 6.5rem;
+    background-color: #7ECA9C;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.center-txt{
+    text-align: center;
+}
+.nav-bar{
+    height: 6.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
