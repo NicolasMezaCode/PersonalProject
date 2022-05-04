@@ -80,6 +80,7 @@
         .contact-btn{
             text-decoration: none;
             margin-bottom: 8rem;
+            padding: 1.5rem 4rem 1.5rem 4rem;
         }
         .contact{
             width: fit-content;
@@ -87,8 +88,7 @@
             background-color: transparent;
             font-weight: 700;
             color: #CCFFBD;
-            font-size: 2rem;
-            padding: 1.5rem 4rem 1.5rem 4rem;
+            font-size: 2rem; 
             border: 2px solid #CCFFBD;
             transition-duration: 0.4s;
         }
@@ -97,6 +97,7 @@
             background-color: #7ECA9C; /* Green */
             color: white;
         }
+        
         footer{
             background-color: #40394A;
             height: 50px;
@@ -172,6 +173,10 @@
             font-size: 5.5rem;
             text-align: left;
         }
+        .first-txt:hover{
+            color: gold;
+            transition: all .35s;
+        }
         span{
             font-size: 5.5rem;
         }
@@ -203,31 +208,60 @@
         .vertical-pic{
             padding-right: 4rem;
         }
-        .contact-btn{
-            text-decoration: none;
-            margin-bottom: 8rem;
-            margin-top: 8rem;
-            margin-right: 15rem;
-        }
+        
         .contact-mobile{
             display: none;
         }
+        .contact-btn{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 8rem;
+        }
         .contact{
+            position: relative;
+            z-index: 2;
+            display: flex;
+            margin-left: 8rem;
             width: fit-content;
-            text-decoration: none;
-            background-color: transparent;
-            font-weight: 700;
+            height: max-content;
             color: #CCFFBD;
-            font-size: 3rem;
-            padding: 1.5rem 4rem 1.5rem 4rem;
-            border: 2px solid #CCFFBD;
-            transition-duration: 0.4s;
+            border: 2px solid #7ECA9C;
+            text-align: center;
+            transition: all .35s;
         }
-        .contact:hover{
-            border: #7ECA9C;
-            background-color: #7ECA9C; /* Green */
-            color: white;
+        .btn{
+            position: relative;
+            z-index: 2;
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            
         }
+        .btn:hover{
+            color: #1C1427;
+          }
+        .contact:after{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #7ECA9C;
+            transition: all .35s;
+        }
+
+        .contact:hover:after{
+            width: 100%;
+        }
+
         h1{
             font-size: 4rem;
             color: #CCFFBD;
